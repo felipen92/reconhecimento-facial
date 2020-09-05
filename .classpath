@@ -2,5 +2,23 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/javacpp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/javacv.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/javacv-platform.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-android-arm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-android-arm64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-android-x86.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-android-x86_64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-ios-arm64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-ios-x86_64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-linux-arm64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-linux-armhf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-linux-ppc64le.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-linux-x86.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-linux-x86_64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-macosx-x86_64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-platform.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-windows-x86.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe/Documents/reconhecimento_facial/javacv-platform-1.5.3-bin/javacv-platform-1.5.3-bin/opencv-windows-x86_64.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
