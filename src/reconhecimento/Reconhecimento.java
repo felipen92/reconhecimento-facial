@@ -43,9 +43,20 @@ public class Reconhecimento {
 
 		detectorFaces = new CascadeClassifier("src\\recursos\\haarcascade_frontalface_alt.xml");
 		
-		FaceRecognizer reconhecedor = EigenFaceRecognizer.create();
-		
-		reconhecedor.read("src\\recursos\\classificadorEigenFaces.yml");
+		//RECONHECIMENTO FRACO
+        //FaceRecognizer reconhecedor = EigenFaceRecognizer.create();             
+        //reconhecedor.read("src\\recursos\\classificadorEigenFaces.yml");        
+        
+        //SETAR A PRECISAO DO RECONHECIMENTO
+        //reconhecedor.setThreshold(0);
+        
+        //RECONHECIMENTO MEDIO
+        //FaceRecognizer reconhecedor = FisherFaceRecognizer.create();
+        //reconhecedor.read("src\\recursos\\classificadorFisherFaces.yml");
+        
+        //RECONHECIMENTO FORTE
+        FaceRecognizer reconhecedor = LBPHFaceRecognizer.create();
+        reconhecedor.read("src\\recursos\\classificadorLBPH.yml");
 
 		CanvasFrame cFrame = new CanvasFrame("Reconhecimento", CanvasFrame.getDefaultGamma() / camera.getGamma());
 
