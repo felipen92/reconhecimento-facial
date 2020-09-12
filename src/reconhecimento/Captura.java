@@ -1,6 +1,7 @@
 package reconhecimento;
 
 import static org.bytedeco.opencv.global.opencv_imgproc.COLOR_BGRA2GRAY;
+
 import static org.bytedeco.opencv.global.opencv_imgproc.cvtColor;
 import static org.bytedeco.opencv.global.opencv_imgproc.rectangle;
 import static org.bytedeco.opencv.global.opencv_imgproc.resize;
@@ -23,30 +24,35 @@ import org.bytedeco.opencv.opencv_objdetect.CascadeClassifier;
 
 public class Captura {
 
+	private static OpenCVFrameGrabber camera;
+	private static CascadeClassifier detectorFaces;
+	private static Mat imagemColorida;
+	private static Scanner cadastro;
+
 	public static void main(String[] args) throws Exception, InterruptedException {
 
 		KeyEvent tecla = null;
 
 		OpenCVFrameConverter.ToMat converteMat = new OpenCVFrameConverter.ToMat();
 
-		OpenCVFrameGrabber camera = new OpenCVFrameGrabber(0);
+		camera = new OpenCVFrameGrabber(0);
 
 		camera.start();
 
-		CascadeClassifier detectorFaces = new CascadeClassifier("src\\recursos\\haarcascade_frontalface_alt.xml");
+		detectorFaces = new CascadeClassifier("src\\recursos\\haarcascade_frontalface_alt.xml");
 
 		CanvasFrame cFrame = new CanvasFrame("Camera", CanvasFrame.getDefaultGamma() / camera.getGamma());
 
 		Frame frameCapturado = null;
 
-		Mat imagemColorida = new Mat();
+		imagemColorida = new Mat();
 		
 		int numeroAmostrasImagem = 25;
 		
 		int amostra = 1;
 
 		System.out.print("Digite seu ID: ");
-		Scanner cadastro = new Scanner(System.in);
+		cadastro = new Scanner(System.in);
 		int idPessoa = cadastro.nextInt();
 		
 		while ((frameCapturado = camera.grab()) != null) {
